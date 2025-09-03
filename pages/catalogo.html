@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LevelUpGamer - Catálogo</title>
+    <link rel="icon" href="../img/LevelupGamer.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/cardsIndex.css">
+    <link rel="stylesheet" href="../css/catalogo.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="../img/LevelupGamer.png" alt="logo" width="30" height="24">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenido -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- IZQUIERDA: Menú principal -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuPrincipal">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                </ul>
+                <!-- CENTRO: Buscador -->
+                <form class="d-flex me-3" role="search">
+                    <input id="buscador" class="form-control me-2" type="search" placeholder="Buscar producto..."
+                        aria-label="Buscar">
+                </form>
+                <!-- DERECHA: Hora + Switch modo oscuro -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item d-flex align-items-center">
+                        <span id="reloj" class="nav-link active"></span>
+                    </li>
+                </ul>
+                <div class="form-check form-switch text-nowrap ms-3">
+                    <input class="form-check-input" type="checkbox" id="themeSwitch">
+                    <label class="form-check-label" for="themeSwitch">💡 / 🌙</label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CATALOGO -->
+    <!-- catalogo inicial me quedo mmm no c feo XD-->
+    <section class="container mt-5 mb-5" id="productos">
+        <h4 class="mb-4">🎮 Revisa Nuestro Catálogo</h4>
+        <div class="row g-4 justify-content-center">
+
+            <!-- PRODUCTO 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 producto">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="img-container">
+                        <img src="../img/productos/kumara.png" class="card-img-top" alt="Teclado Kumara">
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span>RK001</span>
+                        <h5 class="card-title text-center">Teclado Redragon Kumara</h5>
+                        <p class="card-text">Teclado mecánico retroiluminado ideal para gamers.</p>
+                        <strong class="text-success">$44.990</strong>
+                        <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 producto">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="img-container">
+                        <img src="../img/productos/logitech.jpg" class="card-img-top" alt="Mouse Logitech">
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span>LG502</span>
+                        <h5 class="card-title text-center">Mouse Logitech G502 Hero</h5>
+                        <p class="card-text">Sensor HERO 25K, rendimiento y precisión.</p>
+                        <strong class="text-success">$62.900</strong>
+                        <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 3 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 producto">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="img-container">
+                        <img src="../img/productos/razer-firefly-V2-Pro-mousepad.png" class="card-img-top"
+                            alt="MousePad Razer">
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span>RZ043</span>
+                        <h5 class="card-title text-center">MousePad Razer RGB</h5>
+                        <p class="card-text">Superficie suave con iluminación Chroma.</p>
+                        <strong class="text-success">$15.900</strong>
+                        <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 producto">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="img-container">
+                        <img src="../img/productos/fury_ram.jpg" class="card-img-top" alt="Memoria Kingston">
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span>KF093</span>
+                        <h5 class="card-title text-center">RAM Kingston Fury 16GB DDR4</h5>
+                        <p class="card-text">Rendimiento extremo para gaming o trabajo.</p>
+                        <strong class="text-success">$35.500</strong>
+                        <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 5 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 producto">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="img-container">
+                        <img src="../img/productos/tufF16.png" class="card-img-top" alt="Asus TUF F16">
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span>TUF161</span>
+                        <h5 class="card-title text-center">Asus TUF F16 RTX 4090</h5>
+                        <p class="card-text">
+                            Notebook gamer con RTX 4090, pantalla 16" Full HD 240Hz y procesador Intel i9 13ª gen.
+                            Ideal para gaming competitivo y creación de contenido.
+                        </p>
+                        <strong class="text-success">$700.000</strong>
+                        <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 6 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 producto">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="img-container">
+                        <img src="../img/productos/katana17.png" class="card-img-top" alt="MSI Katana 17">
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span>MSK17</span>
+                        <h5 class="card-title text-center">MSI Katana 17</h5>
+                        <p class="card-text">
+                            Notebook gamer con pantalla 17.3” Full HD 144Hz, Intel i7 13ª gen y RTX 4060.
+                            Potencia y fluidez para gaming y multitarea.
+                        </p>
+                        <strong class="text-success">$850.000</strong>
+                        <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 7 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 producto">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="img-container">
+                        <img src="../img/productos/predator.jpg" class="card-img-top" alt="Acer Predator">
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span>PH300</span>
+                        <h5 class="card-title text-center">Acer Predator Helios 300</h5>
+                        <p class="card-text">
+                            Laptop gamer con Intel i7, RTX 3060 y pantalla 15.6" Full HD 144Hz.
+                            Rendimiento brutal y diseño agresivo.
+                        </p>
+                        <strong class="text-success">$1.249.990</strong>
+                        <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 8 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 producto">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="img-container">
+                        <img src="../img/productos/victus.jpg" class="card-img-top" alt="HP Victus 15">
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span>HP150</span>
+                        <h5 class="card-title text-center">HP Victus 15</h5>
+                        <p class="card-text">Rendimiento sólido para gaming y productividad, listo para cualquier
+                            desafío.</p>
+                        <strong class="text-success">$799.990</strong>
+                        <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 9 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 producto">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="img-container">
+                        <img src="../img/productos/silla1.jpg" class="card-img-top" alt="Silla Gamer 1">
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span>SG001</span>
+                        <h5 class="card-title text-center">Silla Gamer Alpha</h5>
+                        <p class="card-text">Cómoda y ergonómica, perfecta para largas sesiones de gaming.</p>
+                        <strong class="text-success">$25.990</strong>
+                        <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 10 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 producto">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="img-container">
+                        <img src="../img/productos/silla2.jpg" class="card-img-top" alt="Silla Gamer 2">
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span>SG002</span>
+                        <h5 class="card-title text-center">Silla Gamer Beta</h5>
+                        <p class="card-text">Ajustable y resistente, ideal para gaming y estudio.</p>
+                        <strong class="text-success">$29.990</strong>
+                        <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 11 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 producto">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="img-container">
+                        <img src="../img/productos/silla3.png" class="card-img-top" alt="Silla Gamer 3">
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span>SG003</span>
+                        <h5 class="card-title text-center">Silla Gamer Gamma</h5>
+                        <p class="card-text">Diseño ergonómico con soporte lumbar, máxima comodidad.</p>
+                        <strong class="text-success">$34.990</strong>
+                        <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 12 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 producto">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="img-container">
+                        <img src="../img/productos/silla4.jpg" class="card-img-top" alt="Silla Gamer 4">
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span>SG004</span>
+                        <h5 class="card-title text-center">Silla Gamer Delta</h5>
+                        <p class="card-text">Material premium y ajustes personalizados, ideal para cualquier setup.</p>
+                        <strong class="text-success">$39.990</strong>
+                        <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+         <!-- PRODUCTO 13 -->
+<div class="col-sm-6 col-md-4 col-lg-3 producto">
+    <div class="card h-100 shadow-sm card-hover">
+        <div class="img-container">
+            <img src="../img/productos/nintendosw2.jpg" class="card-img-top" alt="Nintendo Switch 2">
+        </div>
+        <div class="card-body d-flex flex-column p-3">
+            <span>NS002</span>
+            <h5 class="card-title text-center">Nintendo Switch 2</h5>
+            <p class="card-text">Consola híbrida de última generación con mejoras en potencia y pantalla OLED.</p>
+            <strong class="text-success">$399.990</strong>
+            <a href="#" class="btn btn-success mt-auto">Ver más</a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 14 -->
+<div class="col-sm-6 col-md-4 col-lg-3 producto">
+    <div class="card h-100 shadow-sm card-hover">
+        <div class="img-container">
+            <img src="../img/productos/ps5.jpg" class="card-img-top" alt="PlayStation 5">
+        </div>
+        <div class="card-body d-flex flex-column p-3">
+            <span>PS501</span>
+            <h5 class="card-title text-center">PlayStation 5</h5>
+            <p class="card-text">La nueva generación de Sony, con gráficos de alto nivel y DualSense inmersivo.</p>
+            <strong class="text-success">$549.990</strong>
+            <a href="#" class="btn btn-success mt-auto">Ver más</a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 15 -->
+<div class="col-sm-6 col-md-4 col-lg-3 producto">
+    <div class="card h-100 shadow-sm card-hover">
+        <div class="img-container">
+            <img src="../img/productos/rogally.jpg" class="card-img-top" alt="ASUS ROG Ally">
+        </div>
+        <div class="card-body d-flex flex-column p-3">
+            <span>RG001</span>
+            <h5 class="card-title text-center">ASUS ROG Ally</h5>
+            <p class="card-text">Consola portátil con Windows 11 y potencia gaming para jugar en cualquier lugar.</p>
+            <strong class="text-success">$699.990</strong>
+            <a href="#" class="btn btn-success mt-auto">Ver más</a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 16 -->
+<div class="col-sm-6 col-md-4 col-lg-3 producto">
+    <div class="card h-100 shadow-sm card-hover">
+        <div class="img-container">
+            <img src="../img/productos/xboxseriesx.png" class="card-img-top" alt="Xbox Series X">
+        </div>
+        <div class="card-body d-flex flex-column p-3">
+            <span>XB001</span>
+            <h5 class="card-title text-center">Xbox Series X</h5>
+            <p class="card-text">La consola más potente de Microsoft, con 4K nativo y Game Pass integrado.</p>
+            <strong class="text-success">$529.990</strong>
+            <a href="#" class="btn btn-success mt-auto">Ver más</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </section>
+
+    <!-- Footer -->
+    <div id="footer">
+        <footer class="text-center text-lg-start mt-5">
+            <div class="container p-4">
+                <div class="row">
+                    <!-- Columna 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h5 class="fw-bold">Level-Up Gamer</h5>
+                        <p>
+                            Tienda online gamer en Chile 🎮
+                            Consolas, accesorios, computadores y sillas especializadas.
+                            Despachos a todo el país 🚚.
+                        </p>
+                    </div>
+
+                    <!-- Columna 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h5 class="fw-bold">Links útiles</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Tienda</a></li>
+                            <li><a href="#">Envíos y devoluciones</a></li>
+                            <li><a href="#">Medios de pago</a></li>
+                            <li><a href="#">Soporte técnico</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna 3 -->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <h5 class="fw-bold">Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-envelope"></i> contacto@levelupgamer.cl</li>
+                            <li><i class="fas fa-phone"></i> +56 9 9876 5432</li>
+                            <li><i class="fas fa-truck"></i> Despacho a todo Chile</li>
+                        </ul>
+                        <!-- Redes -->
+                        <div class="mt-3">
+                            <a class="btn btn-social btn-floating m-1" href="#"><i class="fa fa-facebook-f"></i></a>
+                            <a class="btn btn-social btn-floating m-1" href="#"><i class="fa fa-instagram"></i></a>
+                            <a class="btn btn-social btn-floating m-1" href="#"><i class="fab fa-tiktok"></i></a>
+                            <a class="btn btn-social btn-floating m-1" href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Línea final -->
+            <div class="text-center p-3 footer-bottom">
+                © 2025 <strong>Level-Up Gamer</strong> 🎮 | Todos los derechos reservados
+            </div>
+        </footer>
+    </div>
+
+    <!-- Footer -->
+    <!-- JS -->
+
+    <script src="../js/modoOscuro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/8c365a0d06.js" crossorigin="anonymous"></script>
+
+    <script>
+        // RELOJ
+        function actualizarHora() {
+            const ahora = new Date();
+            const horas = String(ahora.getHours()).padStart(2, '0');
+            const minutos = String(ahora.getMinutes()).padStart(2, '0');
+            document.getElementById("reloj").textContent = `${horas}:${minutos}`;
+        }
+        setInterval(actualizarHora, 1000);
+        actualizarHora();
+
+        // aprovechando el localStorage que valide si el usuario existe por decirlo asi
+        // y que muestre el nav con las opciones, asi como en index.
+        document.addEventListener("DOMContentLoaded", () => {
+            const nav = document.getElementById("menuPrincipal");
+            const user = localStorage.getItem("usuario");
+
+            if (user) {
+                nav.innerHTML = `
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa-solid fa-user" style="color: #1fc749;"></i> ${user}</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="../index.html"><i class="fa-solid fa-home" style="color: #165eda;"></i> Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogo.html"><i class="fa-solid fa-gamepad" style="color: #165eda;"></i> Catálogo</a>
+          </li>
+        `;
+                document.getElementById("logout").addEventListener("click", () => {
+                    localStorage.removeItem("usuario");
+                    window.location.reload();
+                });
+            } else {
+                nav.innerHTML += `
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Iniciar Sesión</a>
+          </li>
+        `;
+            }
+        });
+
+        // que el buscador que tiene los nav de bootstrap sirvan como filtro
+        // mientras uno escriba con el keyup
+        document.getElementById("buscador").addEventListener("keyup", function () {
+            const texto = this.value.toLowerCase();
+            const productos = document.querySelectorAll("#productos .producto");
+
+            productos.forEach(prod => {
+                const nombre = prod.textContent.toLowerCase();
+                prod.style.display = nombre.includes(texto) ? "" : "none";
+            });
+        });
+    </script>
+</body>
+
+</html>

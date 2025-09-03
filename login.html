@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | Level-Up Gamer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+        }
+
+        .form-box {
+            border: 2px solid #1E90FF;
+            border-radius: 15px;
+            padding: 2rem;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 10vh;
+        }
+
+        .btn-gamer {
+            background: #1a8e05;
+            font-weight: bold;
+        }
+
+        .btn-gamer:hover {
+            background: #1E90FF;
+            color: #fff;
+        }
+
+        a {
+            color: #1E90FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #39FF14;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-box text-center">
+        <h2 class="fw-bold">Inicia Sesión</h2>
+        <p>Bienvenido de nuevo, a LevelUpGamer 🎮</p>
+        <form id="loginForm" onsubmit="return validarLogin(event);">
+            <div class="mb-3 text-start">
+                <label for="">Correo Electrónico</label>
+                <div class="input-group">
+
+                    <div class="input-group-text"><i class="fa-solid fa-at fa-fade" style="color: #2c6896;"></i></div>
+                    <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com">
+                </div>
+
+            </div>
+            <div class="mb-3 text-start">
+                <label for="">Contraseña</label>
+                <div class="input-group">
+
+                    <div class="input-group-text"><i class="fa-solid fa-key fa-fade" style="color: #2c6896;"></i></div>
+                    <input type="password" class="form-control" id="password" placeholder="***********">
+                </div>
+
+            </div>
+            <button type="submit" class="btn btn-gamer w-100">Entrar</button>
+        </form>
+        <p class="mt-3">¿No tienes cuenta? <a href="registrarse.html">Regístrate aquí</a></p>
+    </div>
+    <script src="./js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://kit.fontawesome.com/8c365a0d06.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

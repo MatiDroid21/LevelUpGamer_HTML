@@ -1,0 +1,4 @@
+.img-carousel {
+  height: 100vh; /* ocupa toda la pantalla */
+  object-fit: cover; /* que no se deforme */
+}
