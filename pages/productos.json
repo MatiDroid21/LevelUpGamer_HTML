@@ -1,0 +1,130 @@
+[
+  {
+    "id": "RK001",
+    "nombre": "Teclado Redragon Kumara",
+    "descripcion": "Teclado mecánico retroiluminado ideal para gamers.",
+    "precio": 44990,
+    "imagen": "../img/productos/kumara.png",
+    "modalId": "modalRK001"
+  },
+  {
+    "id": "LG502",
+    "nombre": "Mouse Logitech G502 Hero",
+    "descripcion": "Sensor HERO 25K, rendimiento y precisión.",
+    "precio": 62900,
+    "imagen": "../img/productos/logitech.jpg",
+    "modalId": "modalLG502"
+  },
+  {
+    "id": "RZ043",
+    "nombre": "MousePad Razer RGB",
+    "descripcion": "Superficie suave con iluminación Chroma.",
+    "precio": 15900,
+    "imagen": "../img/productos/razer-firefly-V2-Pro-mousepad.png",
+    "modalId": "modalRZ043"
+  },
+  {
+    "id": "KF093",
+    "nombre": "RAM Kingston Fury 16GB DDR4",
+    "descripcion": "Rendimiento extremo para gaming o trabajo.",
+    "precio": 35500,
+    "imagen": "../img/productos/fury_ram.jpg",
+    "modalId": "modalKF093"
+  },
+  {
+    "id": "TUF161",
+    "nombre": "Asus TUF F16 RTX 4090",
+    "descripcion": "Notebook gamer con RTX 4090, pantalla 16\" Full HD 240Hz y procesador Intel i9 13ª gen.",
+    "precio": 700000,
+    "imagen": "../img/productos/tufF16.png",
+    "modalId": "modalTUF161"
+  },
+  {
+    "id": "MSK17",
+    "nombre": "MSI Katana 17",
+    "descripcion": "Notebook gamer con pantalla 17.3” Full HD 144Hz, Intel i7 13ª gen y RTX 4060.",
+    "precio": 850000,
+    "imagen": "../img/productos/katana17.png",
+    "modalId": "modalMSK17"
+  },
+  {
+    "id": "PH300",
+    "nombre": "Acer Predator Helios 300",
+    "descripcion": "Laptop gamer con Intel i7, RTX 3060 y pantalla 15.6\" Full HD 144Hz.",
+    "precio": 1249990,
+    "imagen": "../img/productos/predator.jpg",
+    "modalId": "modalPH300"
+  },
+  {
+    "id": "HP150",
+    "nombre": "HP Victus 15",
+    "descripcion": "Rendimiento sólido para gaming y productividad, listo para cualquier desafío.",
+    "precio": 799990,
+    "imagen": "../img/productos/victus.jpg",
+    "modalId": "modalHP150"
+  },
+  {
+    "id": "SG001",
+    "nombre": "Silla Gamer Alpha",
+    "descripcion": "Cómoda y ergonómica, perfecta para largas sesiones de gaming.",
+    "precio": 25990,
+    "imagen": "../img/productos/silla1.jpg",
+    "modalId": "modalSG001"
+  },
+  {
+    "id": "SG002",
+    "nombre": "Silla Gamer Beta",
+    "descripcion": "Ajustable y resistente, ideal para gaming y estudio.",
+    "precio": 29990,
+    "imagen": "../img/productos/silla2.jpg",
+    "modalId": "modalSG002"
+  },
+  {
+    "id": "SG003",
+    "nombre": "Silla Gamer Gamma",
+    "descripcion": "Diseño ergonómico con soporte lumbar, máxima comodidad.",
+    "precio": 34990,
+    "imagen": "../img/productos/silla3.png",
+    "modalId": "modalSG003"
+  },
+  {
+    "id": "SG004",
+    "nombre": "Silla Gamer Delta",
+    "descripcion": "Material premium y ajustes personalizados, ideal para cualquier setup.",
+    "precio": 39990,
+    "imagen": "../img/productos/silla4.jpg",
+    "modalId": "modalSG004"
+  },
+  {
+    "id": "NS002",
+    "nombre": "Nintendo Switch 2",
+    "descripcion": "Consola híbrida de última generación con mejoras en potencia y pantalla OLED.",
+    "precio": 399990,
+    "imagen": "../img/productos/nintendosw2.jpg",
+    "modalId": "modalNS002"
+  },
+  {
+    "id": "PS501",
+    "nombre": "PlayStation 5",
+    "descripcion": "La nueva generación de Sony, con gráficos de alto nivel y DualSense inmersivo.",
+    "precio": 549990,
+    "imagen": "../img/productos/ps5.jpg",
+    "modalId": "modalPS501"
+  },
+  {
+    "id": "RG001",
+    "nombre": "ASUS ROG Ally",
+    "descripcion": "Consola portátil con Windows 11 y potencia gaming para jugar en cualquier lugar.",
+    "precio": 699990,
+    "imagen": "../img/productos/rogally.jpg",
+    "modalId": "modalRG001"
+  },
+  {
+    "id": "XB001",
+    "nombre": "Xbox Series X",
+    "descripcion": "La consola más potente de Microsoft, con 4K nativo y Game Pass integrado.",
+    "precio": 529990,
+    "imagen": "../img/productos/xboxseriesx.png",
+    "modalId": "modalXB001"
+  }
+]
