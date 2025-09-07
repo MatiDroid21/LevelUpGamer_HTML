@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LevelUpGamer - Contacto</title>
+  <link rel="icon" href="../img/LevelupGamer.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/general.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    /* Estilo gamer */
+    .hero {
+      background: linear-gradient(135deg, #141E30, #243B55);
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .form-gamer {
+      background: #121212;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #00ffcc55;
+      box-shadow: 0 0 20px #00ffcc33;
+    }
+
+    .form-gamer label {
+      color: #00ffcc;
+      font-weight: 600;
+    }
+
+    .btn-gamer {
+      background: #00ffcc;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-gamer:hover {
+      background: #00ffaa;
+      box-shadow: 0 0 15px #00ffaa88;
+    }
+
+    footer {
+      background: #0a0a0a;
+      color: #aaa;
+      padding: 2rem 0;
+      text-align: center;
+      border-top: 1px solid #00ffcc55;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../img/LevelupGamer.png" alt="logo" width="40" height="40" class="me-2">
+        <span class="fw-bold text-neon">LevelUpGamer</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html"><i class="fa-solid fa-home" style="color: #165eda;"></i> Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/catalogo.html"><i class="fa-solid fa-gamepad" style="color: #165eda;"></i> Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="quienes-somos.html"><i class="fa-solid fa-people-line fa-fade" style="color: #63E6BE;"></i> Quiénes Somos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./contacto.html"><i class="fas fa-envelope me-1 fa-fade"></i> Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--  -->
+  <!-- <li class="nav-item">
+            <a class="nav-link"><i class="fa-solid fa-user" style="color: #1fc749;"></i> ${user}</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="../index.html"><i class="fa-solid fa-home" style="color: #165eda;"></i> Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogo.html"><i class="fa-solid fa-gamepad" style="color: #165eda;"></i> Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="logout"><i class="fa-solid fa-right-from-bracket" style="color: #e63946;"></i> Cerrar sesión</a>
+          </li>
+        `; -->
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>📩 Contáctanos</h1>
+    <p>¿Tienes dudas o necesitas ayuda? Escríbenos y nuestro equipo gamer responderá a la velocidad de la luz 🚀.</p>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form id="formContacto" class="form-gamer">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">👤 Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre gamer">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">📧 Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="tuemail@ejemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">💬 Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-gamer w-100">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 <strong>LevelUpGamer</strong> 🎮 | Todos los derechos reservados</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Validación con SweetAlert
+    document.getElementById("formContacto").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById("nombre").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const mensaje = document.getElementById("mensaje").value.trim();
+
+      if (!nombre || !email || !mensaje) {
+        Swal.fire({
+          icon: "error",
+          title: "Campos incompletos",
+          text: "Por favor completa todos los campos antes de enviar."
+        });
+        return;
+      }
+
+      const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+      if (!emailRegex.test(email)) {
+        Swal.fire({
+          icon: "warning",
+          title: "Correo inválido",
+          text: "Por favor ingresa un correo electrónico válido."
+        });
+        return;
+      }
+
+      // Si pasa validaciones
+      Swal.fire({
+        icon: "success",
+        title: "¡Mensaje enviado!",
+        text: "Gracias por contactarnos, " + nombre + ". Te responderemos pronto."
+      });
+
+      // Reset del formulario
+      this.reset();
+    });
+
+  </script>
+      <script src="https://kit.fontawesome.com/8c365a0d06.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
