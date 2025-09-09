@@ -102,13 +102,15 @@ document.addEventListener('click', e => {
         localStorage.setItem('carrito', JSON.stringify(carrito));
         mostrarCarrito();
 
-        // Mostrar feedback
+        // Mostrar feedback al usuario
         mostrarToast(`${nombre} agregado al carrito 🛒 (Cantidad: ${cantidadAgregada})`);
     }
 });
 
 
 // Función para mostrar notificación
+// esta notificacion sirve para que el usuario cuando agregue productos al carro, le aparezca en un apartado de la pantalla
+// que el producto se agregó al carrito
 function mostrarToast(mensaje) {
     const toast = document.createElement('div');
     toast.className = 'toast align-items-center text-bg-success border-0 position-fixed top-0 end-0 m-3';
@@ -120,7 +122,7 @@ function mostrarToast(mensaje) {
         </div>
     `;
     document.body.appendChild(toast);
-
+    // creamos el bootstrap TOAST, esto funciona además porque importamos la biblioteca en los html.
     const bsToast = new bootstrap.Toast(toast, { delay: 2000 });
     bsToast.show();
 
