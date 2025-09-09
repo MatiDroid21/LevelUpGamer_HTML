@@ -67,6 +67,7 @@ function mostrarCarrito() {
         const confirmado = confirm(`El total a pagar es $${totalConDescuento.toLocaleString('es-CL')}. ¿Deseas confirmar la compra?`);
         if(confirmado){
             const ventas = JSON.parse(localStorage.getItem('ventas')) || [];
+            
             ventas.push({
                 fecha: new Date().toLocaleString(),
                 items: carrito,
