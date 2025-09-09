@@ -1,0 +1,48 @@
+ /* Estilo gamer */
+    .hero {
+      background: linear-gradient(135deg, #141E30, #243B55);
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+      text-shadow: 0 0 10px #00634f;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .form-gamer {
+      background: #121212;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #00ffcc55;
+      box-shadow: 0 0 20px #00ffcc33;
+    }
+
+    .form-gamer label {
+      color: #00ffcc;
+      font-weight: 600;
+    }
+
+    .btn-gamer {
+      background: #00ffcc;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-gamer:hover {
+      background: #01895b;
+      box-shadow: 0 0 15px #00ffaa88;
+    }
+
+    footer {
+      background: #0a0a0a;
+      color: #aaa;
+      padding: 2rem 0;
+      text-align: center;
+      border-top: 1px solid #00ffcc55;
+      margin-top: 3rem;
+    }

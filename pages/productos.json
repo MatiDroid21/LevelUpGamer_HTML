@@ -126,5 +126,38 @@
     "precio": 529990,
     "imagen": "../img/productos/xboxseriesx.png",
     "modalId": "modalXB001"
-  }
+  },
+  {
+    "id": "UNO001",
+    "nombre": "UNO",
+    "descripcion": "Juego de cartas rápido y divertido donde gana el primero en quedarse sin cartas.",
+    "precio": 9990,
+    "imagen": "../img/productos/uno.jpg",
+    "modalId": "modalUNO001"
+  },
+  {
+    "id": "MONO002",
+    "nombre": "Monopoly",
+    "descripcion": "El clásico juego de mesa donde negocias propiedades y construyes tu imperio inmobiliario.",
+    "precio": 24990,
+    "imagen": "../img/productos/monopoly.jpg",
+    "modalId": "modalMONO002"
+  },
+  {
+    "id": "PREG003",
+    "nombre": "Preguntados",
+    "descripcion": "Juego de trivia con miles de preguntas para poner a prueba tus conocimientos en distintas categorías.",
+    "precio": 19990,
+    "imagen": "../img/productos/preguntados.jpg",
+    "modalId": "modalPREG003"
+  },
+{
+  "id": "CLUE004",
+  "nombre": "Clue",
+  "descripcion": "El clásico juego de misterio donde debes descubrir al asesino, la habitación y el arma.",
+  "precio": 18990,
+  "imagen": "../img/productos/clue.jpg",
+  "modalId": "modalCLUE004"
+}
+
 ]
