@@ -23,7 +23,7 @@ function mostrarCarrito() {
         li.className = 'list-group-item d-flex justify-content-between align-items-center';
         li.innerHTML = `
             ${item.nombre} x ${item.cantidad}
-            <span>$${(item.precio * item.cantidad).toLocaleString('es-CL')}</span>
+            <span style='color:green'>$${(item.precio * item.cantidad).toLocaleString('es-CL')}</span>
             <button class="btn btn-sm btn-danger eliminar" data-index="${index}">✖</button>
         `;
         lista.appendChild(li);
@@ -43,9 +43,9 @@ function mostrarCarrito() {
     const totalDiv = document.createElement('div');
     totalDiv.className = 'd-flex flex-column align-items-end mt-2';
     totalDiv.innerHTML = `
-        <strong>Total: $${total.toLocaleString('es-CL')}</strong>
-        ${descuento > 0 ? `<strong>Descuento DuocUC: -$${(total*descuento).toLocaleString('es-CL')}</strong>
-        <strong>Total final: $${totalConDescuento.toLocaleString('es-CL')}</strong>` : ""}
+        <strong style='color:green'>Total: $${total.toLocaleString('es-CL')}</strong>
+        ${descuento > 0 ? `<strong style='color:green'>Descuento DuocUC: -$${(total*descuento).toLocaleString('es-CL')}</strong>
+        <strong style='color:green'>Total final: $${totalConDescuento.toLocaleString('es-CL')}</strong>` : ""}
         <button id="pagarCarrito" class="btn btn-success mt-2">Pagar</button>
     `;
     contenedor.appendChild(totalDiv);
@@ -79,7 +79,7 @@ function mostrarCarrito() {
             localStorage.removeItem('carrito');
             mostrarCarrito();
 
-            alert('✅ Pago simulado exitoso. Gracias por tu compra.');
+            alert('Pago simulado exitoso. Gracias por tu compra.');
         }
     });
 }
