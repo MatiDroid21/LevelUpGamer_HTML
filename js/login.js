@@ -24,8 +24,7 @@ function validarLogin(event) {
         });
     } else {
         //guardar valor del correo para ver si lo puedo remplazar en el nav :D
-        //ojala funcione a ver si me acuerdo ajajajajaj.
-        localStorage.setItem("usuario",correo.value)
+        localStorage.setItem("usuario", correo.value)
         Swal.fire({
             title: "Bienvenido!",
             text: correo.value,

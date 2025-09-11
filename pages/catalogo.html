@@ -2,191 +2,64 @@
 <html lang="es" data-bs-theme="light">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LevelUpGamer - Catálogo</title>
-    <link rel="icon" href="../img/LevelupGamer.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/general.css">
-    <link rel="stylesheet" href="../css/cardsIndex.css">
-    <link rel="stylesheet" href="../css/catalogo.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LevelUpGamer - Catálogo</title>
+  <link rel="icon" href="../img/LevelupGamer.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="../css/cardsIndex.css">
+  <link rel="stylesheet" href="../css/catalogo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+   
 </head>
 
 <body>
 
-    <body> <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid"> <!-- Logo --> <a class="navbar-brand" href="#"> <img
-                        src="../img/LevelupGamer.png" alt="logo" width="30" height="24"> </a> <button
-                    class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"> <span class="navbar-toggler-icon"></span> </button>
-                <!-- Contenido -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- IZQUIERDA: Menú principal -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuPrincipal">
-                        <li class="nav-item"> <a class="nav-link active" href="#">Home</a> </li>
-                    </ul> <!-- CENTRO: Buscador -->
-                    <form class="d-flex me-3" role="search"> <input id="buscador" class="form-control me-2"
-                            type="search" placeholder="Buscar producto..." aria-label="Buscar"> </form>
-                    <!-- DERECHA: Hora + Switch modo oscuro -->
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item d-flex align-items-center"> <span id="reloj" class="nav-link active"></span>
-                        </li>
-                    </ul>
-                    <div class="form-check form-switch text-nowrap ms-3"> <input class="form-check-input"
-                            type="checkbox" id="themeSwitch"> <label class="form-check-label" for="themeSwitch">💡 /
-                            🌙</label> </div>
-                </div>
-            </div>
-        </nav>
-        <!-- CATALOGO -->
-        <section class="container mt-5 mb-5" id="productos">
-            <h4 class="mb-4">🎮 Revisa Nuestro Catálogo</h4>
-            <div class="row g-4 justify-content-center" id="productosContainer"></div>
-        </section>
+  <body> <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid"> <!-- Logo --> <a class="navbar-brand" href="#"> <img src="../assets/img/LevelupGamer.png"
+            alt="logo" width="30" height="24"> </a> <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"> <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Contenido -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- IZQUIERDA: Menú principal -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuPrincipal">
+            <li class="nav-item"> <a class="nav-link active" href="#">Home</a> </li>
+          </ul> <!-- CENTRO: Buscador -->
+          <form class="d-flex me-3" role="search"> <input id="buscador" class="form-control me-2" type="search"
+              placeholder="Buscar producto..." aria-label="Buscar"> </form>
+          <!-- DERECHA: Hora + Switch modo oscuro -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item d-flex align-items-center"> <span id="reloj" class="nav-link active"></span>
+            </li>
+          </ul>
+          <div class="form-check form-switch text-nowrap ms-3"> <input class="form-check-input" type="checkbox"
+              id="themeSwitch"> <label class="form-check-label" for="themeSwitch">💡 /
+              🌙</label> </div>
+        </div>
+      </div>
+    </nav>
+    <!-- CATALOGO -->
+    <section class="container mt-5 mb-5" id="productos">
+      <h4 class="mb-4">🎮 Revisa Nuestro Catálogo</h4>
+      <div class="row g-4 justify-content-center" id="productosContainer"></div>
+    </section>
 
-        <script src="../js/modoOscuro.js"></script>
-        <script src="https://kit.fontawesome.com/8c365a0d06.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
+    
+    <script src="../js/catalogo.js"></script>
+    <section class="container mt-5 mb-5">
+      <h4>🛒 Carrito de Compras</h4>
+      <div id="carrito" style="color: rgb(9, 203, 9);"></div>
 
-            // Traer productos desde JSON
-            fetch('productos.json')
-                .then(res => res.json())
-                .then(data => {
-                    const container = document.getElementById('productosContainer');
+    </section>
+    <script src="https://kit.fontawesome.com/8c365a0d06.js" crossorigin="anonymous"></script>
+    <script src="../js/utils/navCatalogo.js"></script>
+    <script src="../js/reloj.js"></script>
+    <script src="../js/modoOscuro.js"></script>
+    <script src="../js/carrito.js"></script>
 
-                    data.forEach(producto => {
-                        // Crear tarjeta con los productos a partir del json
-                        const card = document.createElement('div');
-                        card.className = 'col-sm-6 col-md-4 col-lg-3 producto';
-                        card.innerHTML = `
-            <div class="card h-100 shadow-sm card-hover">
-              <div class="img-container">
-                <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
-              </div>
-              <div class="card-body d-flex flex-column p-3">
-                <span>${producto.id}</span>
-                <h5 class="card-title text-center">${producto.nombre}</h5>
-                <p class="card-text">${producto.descripcion}</p>
-                <strong class="text-success">$${producto.precio.toLocaleString('es-CL')}</strong>
-                <a href="#" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modal${producto.id}">Ver más</a>
-              </div>
-            </div>
-          `;
-
-                        container.appendChild(card);
-
-                        // Crear modal
-                        const modal = document.createElement('div');
-                        modal.className = 'modal fade';
-                        modal.id = `modal${producto.id}`;
-                        modal.tabIndex = -1;
-                        modal.innerHTML = `
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">${producto.nombre}</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body text-center">
-                  <img src="${producto.imagen}" class="img-fluid mb-3" alt="${producto.nombre}">
-                  <p>${producto.descripcion}</p>
-                  <strong class="text-success">$${producto.precio.toLocaleString('es-CL')}</strong>
-                </div>
-               <div class="modal-footer justify-content-center">
-  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-  <button type="button" class="btn btn-success btn-comprar"
-    data-id="${producto.id}" data-nombre="${producto.nombre}" data-precio="${producto.precio}">
-    Comprar
-  </button>
-</div>
-
-              </div>
-            </div>
-          `;
-                        document.body.appendChild(modal);
-                    });
-                });
-        </script>
-
-        <!-- JS -->
-        <script src="../js/modoOscuro.js"></script> <!-- Bootstrap Icons -->
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"> -->
-        <!-- fin footer -->
-        
-        <script src="https://kit.fontawesome.com/8c365a0d06.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-    <script>
-  // RELOJ
-  function actualizarHora() {
-    const ahora = new Date();
-    const horas = String(ahora.getHours()).padStart(2, '0');
-    const minutos = String(ahora.getMinutes()).padStart(2, '0');
-    document.getElementById("reloj").textContent = `${horas}:${minutos}`;
-  }
-
-  setInterval(actualizarHora, 1000);
-  actualizarHora(); // llamada inicial
-
-  // MENÚ SEGÚN USUARIO
-  document.addEventListener("DOMContentLoaded", () => {
-    const nav = document.getElementById("menuPrincipal");
-    const user = localStorage.getItem("usuario");
-
-    if (user) {
-      nav.innerHTML = `
-        <li class="nav-item">
-          <a class="nav-link">
-            <i class="fa-solid fa-user fa-fade" style="color: #1fc749;"></i> ${user}
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html">
-            <i class="fa-solid fa-home fa-fade" style="color: #165eda;"></i> Inicio
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="catalogo.html">
-            <i class="fa-solid fa-gamepad fa-fade" style="color: #165eda;"></i> Catálogo
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" id="logout">
-            <i class="fa-solid fa-right-from-bracket fa-fade" style="color: #e63946;"></i> Cerrar sesión
-          </a>
-        </li>
-      `;
-
-      // Logout
-      document.getElementById("logout").addEventListener("click", () => {
-        localStorage.removeItem("usuario");
-        window.location.reload();
-      });
-    } else {
-      // Si no hay usuario, redirige al index
-      window.location.href = "../index.html";
-    }
-
-    // FILTRO DE BUSCADOR
-    const buscador = document.getElementById("buscador");
-    if (buscador) {
-      buscador.addEventListener("keyup", function () {
-        const texto = this.value.toLowerCase();
-        const productos = document.querySelectorAll("#productos .producto");
-        productos.forEach(prod => {
-          const nombre = prod.textContent.toLowerCase();
-          prod.style.display = nombre.includes(texto) ? "" : "none";
-        });
-      });
-    }
-  });
-</script>
-<section class="container mt-5 mb-5">
-  <h4>🛒 Carrito de Compras</h4>
-  <div id="carrito" style="color: rgb(9, 203, 9);"></div>
-  <script src="../js/carrito.js"></script>
-</section>
-
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 
 </html>

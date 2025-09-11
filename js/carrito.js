@@ -6,7 +6,7 @@ function mostrarCarrito() {
     const contenedor = document.getElementById('carrito');
     contenedor.innerHTML = '';
 
-    if(carrito.length === 0){
+    if (carrito.length === 0) {
         contenedor.innerHTML = '<p>Tu carrito está vacío</p>';
         return;
     }
@@ -34,7 +34,7 @@ function mostrarCarrito() {
     // Calcular descuento si el usuario es @duoc.cl
     const usuario = localStorage.getItem("usuario");
     let descuento = 0;
-    if(usuario && usuario.endsWith("@duocuc.cl")){
+    if (usuario && usuario.endsWith("@duocuc.cl")) {
         descuento = 0.20;
     }
     const totalConDescuento = total - total * descuento;
@@ -44,7 +44,7 @@ function mostrarCarrito() {
     totalDiv.className = 'd-flex flex-column align-items-end mt-2';
     totalDiv.innerHTML = `
         <strong style='color:green'>Total: $${total.toLocaleString('es-CL')}</strong>
-        ${descuento > 0 ? `<strong style='color:green'>Descuento DuocUC: -$${(total*descuento).toLocaleString('es-CL')}</strong>
+        ${descuento > 0 ? `<strong style='color:green'>Descuento DuocUC: -$${(total * descuento).toLocaleString('es-CL')}</strong>
         <strong style='color:green'>Total final: $${totalConDescuento.toLocaleString('es-CL')}</strong>` : ""}
         <button id="pagarCarrito" class="btn btn-success mt-2">Pagar</button>
     `;
@@ -62,12 +62,12 @@ function mostrarCarrito() {
 
     // Pagar carrito
     document.getElementById('pagarCarrito').addEventListener('click', () => {
-        if(carrito.length === 0) return alert('El carrito está vacío');
+        if (carrito.length === 0) return alert('El carrito está vacío');
 
         const confirmado = confirm(`El total a pagar es $${totalConDescuento.toLocaleString('es-CL')}. ¿Deseas confirmar la compra?`);
-        if(confirmado){
+        if (confirmado) {
             const ventas = JSON.parse(localStorage.getItem('ventas')) || [];
-            
+
             ventas.push({
                 fecha: new Date().toLocaleString(),
                 items: carrito,
@@ -86,18 +86,18 @@ function mostrarCarrito() {
 
 // Añadir productos al carrito desde los botones "Comprar"
 document.addEventListener('click', e => {
-    if(e.target.classList.contains('btn-comprar')){
+    if (e.target.classList.contains('btn-comprar')) {
         const id = e.target.dataset.id;
         const nombre = e.target.dataset.nombre;
         const precio = Number(e.target.dataset.precio);
 
         const existing = carrito.find(item => item.id === id);
         let cantidadAgregada = 1;
-        if(existing){
+        if (existing) {
             existing.cantidad++;
             cantidadAgregada = existing.cantidad; // cantidad total en carrito
         } else {
-            carrito.push({id, nombre, precio, cantidad: 1});
+            carrito.push({ id, nombre, precio, cantidad: 1 });
         }
 
         localStorage.setItem('carrito', JSON.stringify(carrito));
